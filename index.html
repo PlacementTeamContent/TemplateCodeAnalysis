@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel to JSON Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="file" id="upload">
+    <button onclick="convertToJson()">Convert to JSON</button>
+    <!-- Updated element from <pre> to <textarea> -->
+    <textarea id="jsonOutput" style="width:100%; height:300px;"></textarea>
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    <button onclick="ValidateJSON()">Validate Response</button>
+    <button onclick="ClearRespone()">Clear Response</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

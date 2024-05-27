@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+textarea#jsonOutput {
+  margin-top: 20px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font for JSON */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow for depth */
+  background-color: #ffffff;
+  resize: vertical; /* Allows the user to adjust the height of the textarea */
+}
+
+/* Style adjustments for better responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  textarea#jsonOutput, input[type="file"], button {
+    width: 100%; /* Makes input and buttons fill the container on smaller screens */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  }
+
+  button {
+    width: auto; /* Reverts button width to auto for proper spacing */
+    margin: 10px 0; /* Adds more space around buttons */
+  }
+}
